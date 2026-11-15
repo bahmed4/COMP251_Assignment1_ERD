@@ -59,127 +59,52 @@ Once you have completed both of the items above, you will need to submit the lin
 |**Deliverable 2 - Properly structured ER diagram** | All Entities identified in deliverable 1 are visually represented in Workbench ER diagram. (4pts) <br> Relationship strength is indicated by solid or dotted line (2pt) <br> Foreign keys and Primary keys are identified and correctly assigned (2 pts) <br> Each column name indicates null vs not null (2pt) <br> Image of ER diagram is depicted in README.MD file (2 pt) <br> Associative entities are identified and properly captures the relationship between the two entities(3 pts)   |   15   |
 |           |        |**Total Points:   30**   |
 
-<mxfile host="app.diagrams.net.">
-  <diagram name="Lab 2 ERD" id="ND5k1XugLXEeYYsTM9-_">
-    <mxGraphModel dx="1414" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-1" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="STUDENT" vertex="1">
-          <mxGeometry height="108" width="210" x="380" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-2" parent="ZnV8sNZjAnpfgKRaxHct-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*student_id" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-3" parent="ZnV8sNZjAnpfgKRaxHct-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="student_name" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-4" parent="ZnV8sNZjAnpfgKRaxHct-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="student_address" vertex="1">
-          <mxGeometry height="26" width="210" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-5" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SEAT" vertex="1">
-          <mxGeometry height="82" width="210" x="40" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-6" parent="ZnV8sNZjAnpfgKRaxHct-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*seat_no" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-7" parent="ZnV8sNZjAnpfgKRaxHct-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="seat_position" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-8" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ENROLLMENT" vertex="1">
-          <mxGeometry height="108" width="210" x="720" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-9" parent="ZnV8sNZjAnpfgKRaxHct-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="student_id (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-10" parent="ZnV8sNZjAnpfgKRaxHct-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="course_name (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-11" parent="ZnV8sNZjAnpfgKRaxHct-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="course_number (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-12" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="COURSE" vertex="1">
-          <mxGeometry height="82" width="210" x="1060" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-13" parent="ZnV8sNZjAnpfgKRaxHct-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*course_name" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-14" parent="ZnV8sNZjAnpfgKRaxHct-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*course_number" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-15" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="INSTRUCTOR" vertex="1">
-          <mxGeometry height="108" width="210" x="1400" y="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-16" parent="ZnV8sNZjAnpfgKRaxHct-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*instructor_no" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-17" parent="ZnV8sNZjAnpfgKRaxHct-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="instructor_name" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-18" parent="ZnV8sNZjAnpfgKRaxHct-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="instructor_faculty" vertex="1">
-          <mxGeometry height="26" width="210" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-19" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="COURSE_SECTION" vertex="1">
-          <mxGeometry height="108" width="210" x="1060" y="400" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-20" parent="ZnV8sNZjAnpfgKRaxHct-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="course_name (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-21" parent="ZnV8sNZjAnpfgKRaxHct-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="course_number (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-22" parent="ZnV8sNZjAnpfgKRaxHct-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="section_number (FK)" vertex="1">
-          <mxGeometry height="26" width="210" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-23" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SECTION" vertex="1">
-          <mxGeometry height="56" width="210" x="1060" y="660" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-24" parent="ZnV8sNZjAnpfgKRaxHct-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*section_number" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-25" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="PROFESSOR" vertex="1">
-          <mxGeometry height="108" width="210" x="1060" y="880" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-26" parent="ZnV8sNZjAnpfgKRaxHct-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;fontStyle=1;" value="*professor_id" vertex="1">
-          <mxGeometry height="26" width="210" y="30" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-27" parent="ZnV8sNZjAnpfgKRaxHct-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="professor_name" vertex="1">
-          <mxGeometry height="26" width="210" y="56" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-28" parent="ZnV8sNZjAnpfgKRaxHct-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;html=1;" value="professor_faculty" vertex="1">
-          <mxGeometry height="26" width="210" y="82" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-29" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERmandOne;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="ZnV8sNZjAnpfgKRaxHct-5" value="fills">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-30" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ZnV8sNZjAnpfgKRaxHct-8" value="has">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-31" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="ZnV8sNZjAnpfgKRaxHct-8" value="has">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-32" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="ZnV8sNZjAnpfgKRaxHct-12" value="teaches">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-33" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="ZnV8sNZjAnpfgKRaxHct-19" value="has">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-34" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="ZnV8sNZjAnpfgKRaxHct-19" value="has">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-35" edge="1" parent="1" source="ZnV8sNZjAnpfgKRaxHct-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;startSize=14;endSize=14;fontStyle=2;labelBackgroundColor=#ffffff;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="ZnV8sNZjAnpfgKRaxHct-23" value="teaches">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ZnV8sNZjAnpfgKRaxHct-36" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=left;" value="Lab 2 – Conceptual ERD (School) – Bilal Ahmed" vertex="1">
-          <mxGeometry height="40" width="600" x="40" y="40" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+---
 
-## Assignment Resources
-- [Mark-down Syntax Cheat Sheet](https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf)
-- [Make a ReadMe file Web-based Editor](https://www.makeareadme.com/)
-- [Draw.io Web-based diagramming tool](https://app.diagrams.net/)
+# MPLSRenters.com ER Model – Bilal Ahmed
+
+## Entities
+
+| Entity | Description | Possible attributes |
+|---|---|---|
+| **PROPERTY** | A luxury apartment building listed on the site. | PropertyID (PK), ClassificationID (FK), FirstName, LastName, Email, Phone, Address, ShortDescription, LongDescription, Latitude, Longitude, MinRent, MaxRent |
+| **RENTER** | A prospective renter who creates a profile on the site. | RenterID (PK), ClassificationID (FK), FirstName, LastName, Email, Phone, Address, Latitude, Longitude, DecisionDate, Bedrooms, Bathrooms, MinRent, MaxRent |
+| **AMENITY** | The preset list of high-end amenities (pool, gym, etc.) that properties and renters can pick from. | AmenityID (PK), AmenityName, AmenityDescription |
+| **AGENT** | A property agent who represents properties and makes offers to renters. | AgentID (PK), PackageID (FK), FirstName, LastName, Email, Phone, IsActive |
+| **CLASSIFICATION** | One of three preset classifications (A, B, C) given to renters and properties. | ClassificationID (PK), Identifier, Title, Description |
+| **PACKAGE** | One of three agent packages that controls how much renter info an agent can see. | PackageID (PK), PackageName, PackageDescription, PaymentOption |
+| **OFFER** | An offer an agent sends to a renter for a specific property. | OfferID (PK), AgentID (FK), RenterID (FK), PropertyID (FK), OfferDescription, ExpirationDate, Status |
+| **PROPERTY_AMENITY** | Associative entity linking properties to their amenities. | PropertyID (PK, FK), AmenityID (PK, FK) |
+| **RENTER_AMENITY** | Associative entity linking renters to the amenities they want. | RenterID (PK, FK), AmenityID (PK, FK) |
+| **RENTER_PROPERTY** | Associative entity linking renters to properties they added to their profile. | RenterID (PK, FK), PropertyID (PK, FK) |
+| **PROPERTY_AGENT** | Associative entity linking agents to the properties they represent. | PropertyID (PK, FK), AgentID (PK, FK) |
+
+## Relationships
+
+1. A **PROPERTY** <ins>has</ins> zero or many **AMENITIES**. An **AMENITY** <ins>belongs to</ins> zero or many **PROPERTIES**. (M:N, resolved by **PROPERTY_AMENITY**)
+2. A **RENTER** <ins>selects</ins> zero or many **AMENITIES**. An **AMENITY** <ins>is selected by</ins> zero or many **RENTERS**. (M:N, resolved by **RENTER_AMENITY**)
+3. A **RENTER** <ins>adds</ins> zero or many **PROPERTIES**. A **PROPERTY** <ins>is added by</ins> zero or many **RENTERS**. (M:N, resolved by **RENTER_PROPERTY**)
+4. A **PROPERTY** <ins>is represented by</ins> zero or many **AGENTS**. An **AGENT** <ins>represents</ins> one or many **PROPERTIES**. (M:N, resolved by **PROPERTY_AGENT**)
+5. A **CLASSIFICATION** <ins>classifies</ins> zero or many **RENTERS**. A **RENTER** <ins>is classified by</ins> one and only one **CLASSIFICATION**.
+6. A **CLASSIFICATION** <ins>classifies</ins> zero or many **PROPERTIES**. A **PROPERTY** <ins>is classified by</ins> one and only one **CLASSIFICATION**.
+7. A **PACKAGE** <ins>is held by</ins> zero or many **AGENTS**. An **AGENT** <ins>holds</ins> one and only one **PACKAGE**.
+8. An **AGENT** <ins>makes</ins> zero or many **OFFERS**. An **OFFER** <ins>is made by</ins> one and only one **AGENT**.
+9. A **RENTER** <ins>receives</ins> zero or many **OFFERS**. An **OFFER** <ins>is sent to</ins> one and only one **RENTER**.
+10. A **PROPERTY** <ins>is featured in</ins> zero or many **OFFERS**. An **OFFER** <ins>is for</ins> one and only one **PROPERTY**.
+
+## Assumptions
+
+1. Must an **AGENT** represent at least one **PROPERTY**? **Yes.**
+2. Can one **OFFER** be for more than one **PROPERTY**? **No.** Each offer is for exactly one property.
+3. Can an **AGENT** send the same **RENTER** more than one **OFFER**? **Yes.** That's why OFFER has its own OfferID instead of a composite key.
+4. Does an offer have a status before the **RENTER** responds? **No.** Status stays NULL until the renter accepts or declines.
+5. Can an **AMENITY**, **CLASSIFICATION**, or **PACKAGE** exist before anyone uses it? **Yes.** They're preset lists, so their minimum is zero.
+6. Is a deactivated **AGENT** deleted from the database? **No.** They stay in the database with IsActive set to No.
+7. Can an associative entity (like **PROPERTY_AMENITY**) exist without both of its parents? **No.** Associative entities are weak and use identifying (solid) relationships. All other entities are strong, and their relationships are non-identifying (dotted).
+8. Can a **RENTER** or **PROPERTY** have more than one **CLASSIFICATION**? **No.** Each has exactly one.
+
+## ER Diagram
+
+![ER Diagram](erd.png)
+
 - [Creating Entity Relationship Diagrams using Draw.io](https://www.youtube.com/watch?v=lAtCySGDD48)
