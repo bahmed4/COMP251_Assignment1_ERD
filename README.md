@@ -107,4 +107,3 @@ Once you have completed both of the items above, you will need to submit the lin
 
 ![ER Diagram](erd.png)
 
-- [Creating Entity Relationship Diagrams using Draw.io](https://www.youtube.com/watch?v=lAtCySGDD48)
